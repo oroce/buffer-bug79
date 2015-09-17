@@ -1,0 +1,18 @@
+{
+  "name": "buffer-bug79",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-global": "browserify index.js --global-transform [ babelify --stage 1 ] -o dist-global.js",
+    "start": "browserify index.js -t [ babelify --stage 1 ] -o dist.js",
+    "server": "http-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babelify": "^6.3.0",
+    "browserify": "^11.1.0",
+    "http-server": "^0.8.0"
+  }
+}
